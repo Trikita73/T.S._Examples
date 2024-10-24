@@ -22,6 +22,6 @@ function logTodo(id: number, title: string, completed: boolean) {
     console.log(`
         Todo ID: ${id}
         Todo title: ${title}
-        IS todo finished: ${completed}
+        IS todo finished: ${completed} 
     `)
 }
