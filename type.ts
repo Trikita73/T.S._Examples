@@ -9,7 +9,7 @@ let x: number = JSON.parse('6');
 let str: string = JSON.parse('strstr');
 
 let isOdd: boolean;
-
+ 
 if (x % 2 === 0) {
     isOdd = false; 
 } else {
