@@ -3,7 +3,7 @@ const arr: string[] = ['a', 'b', 'c'];
 
 let el = arr[0]
 let el2 = arr.pop()
-arr.push(3);
+arr.push(3);  // error
 
 const arr1: number[] = [];
 const arr2: Array<number> = [1, 3];
