@@ -67,3 +67,23 @@ const myAcc: IAccount = {
     login: 'michey'
 };
 */
+
+type Person = {
+    name: string;
+    age: number;
+}
+
+type MyAccount = {
+    email: string;
+    login: string;
+    active: boolean;
+}
+
+type MyDeveloper = {
+    skills: string[],
+    level?: string;
+}
+
+type DevLop = Person & MyAccount & MyDeveloper;
+
+const devArr: DevLop[] = [];
