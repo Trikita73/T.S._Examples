@@ -31,6 +31,9 @@ class ArrayOfString {
     }
 }
 
+
+
+// сокращенная версия
 class ArrayOfAnything<T> {
     constructor(public collection: T[]) {}
 
@@ -41,4 +44,21 @@ class ArrayOfAnything<T> {
 
 new ArrayOfAnything<string>(['1', '2', 's']);
 new ArrayOfAnything<number>([0, 2, 3]);
+
+
+
+
+function printString(arr: string[]): void {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+}
+
+function printNumbers(arr: number[]): void {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+}
+
+function pringAnything<T>(arr: T[]):
 
