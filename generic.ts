@@ -102,3 +102,16 @@ printLenght({a: 1, length: 1})
 
 
 
+function getProperty<T, K extends keyof T>(obj: T, key: K) {
+    return obj[key];
+}
+
+const myObj = {
+    a: 1,
+    b: 2,
+    c: 3,
+}
+
+// K === 'a' | 'b' | 'c'
+
+getProperty(myObj, 'b');
