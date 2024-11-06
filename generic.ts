@@ -60,5 +60,45 @@ function printNumbers(arr: number[]): void {
     }
 }
 
-function pringAnything<T>(arr: T[]):
+function printAnything<T>(arr: T[]): void {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+}
+
+printAnything<number>([1, 2, 34])
+
+
+
+
+function fillArray<T>(len: number, elem: T): T{} {
+    return new Array<T>(len).fill(elem);
+}
+
+const arr1 = fillArray<string>(10, '*');
+
+// пример как использовать generic
+interface Array<T> {
+    concat(...items: Array<T[] | T>): T[];
+    reduce<U>(
+        callback: (state: U, element: T, index: number, array: T[]) => U,
+        firstState?: U
+    ): U;
+}
+
+
+
+
+interface Lenghtwise {
+    length: number;
+}
+
+
+function printLenght<T extends Lenghtwise>(arg: T): number {
+    return arg.length;
+}
+printLenght({a: 1, length: 1})
+
+
+
 
